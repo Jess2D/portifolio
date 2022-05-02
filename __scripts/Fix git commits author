@@ -1,0 +1,5 @@
+git filter-branch --env-filter 'if [ "$GIT_AUTHOR_EMAIL" = "jessicasilveira@Jessicas-MacBook-Pro.local" ]; then
+     GIT_AUTHOR_EMAIL=jessicap_silveira@hotmail.com;
+     GIT_AUTHOR_NAME="Jessica Silveira";
+     GIT_COMMITTER_EMAIL=jessicap_silveira@hotmail.com;
+     GIT_COMMITTER_NAME=jess2d; fi' -- --all
